@@ -3,15 +3,53 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>AssistCam Saúde — Landing Page</title>
+  <title>AssistCam Saúde | Gestão de filas e atendimento em unidades de saúde</title>
+  <meta name="description" content="AssistCam Saúde organiza filas, melhora a comunicação entre equipes e reduz atrasos no atendimento de clínicas e unidades de saúde." />
+  <meta name="keywords" content="AssistCam Saúde, gestão de filas, atendimento em saúde, organização de unidades de saúde, recepção de clínica, comunicação interna hospitalar" />
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
+  <meta name="author" content="AssistCam Saúde" />
+  <meta name="theme-color" content="#2D7D6A" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="AssistCam Saúde | Gestão de filas e atendimento em unidades de saúde" />
+  <meta property="og:description" content="Ferramenta para reduzir filas, organizar o atendimento e melhorar a comunicação interna em clínicas e unidades de saúde." />
+  <meta property="og:url" content="https://kristianps.github.io/PROJETO-V5/" />
+  <meta property="og:image" content="https://kristianps.github.io/PROJETO-V5/assets/og-image.svg" />
+  <meta property="og:site_name" content="AssistCam Saúde" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="AssistCam Saúde" />
+  <meta name="twitter:description" content="Organize filas, reduza atrasos e melhore o atendimento em saúde." />
+  <meta name="twitter:image" content="https://kristianps.github.io/PROJETO-V5/assets/og-image.svg" />
+  <link rel="canonical" href="https://kristianps.github.io/PROJETO-V5/" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "AssistCam Saúde",
+      "applicationCategory": "HealthApplication",
+      "operatingSystem": "Web",
+      "description": "AssistCam Saúde ajuda equipes de saúde a organizar filas, comunicar urgências e melhorar o fluxo de atendimento em clínicas e unidades de saúde.",
+      "url": "https://kristianps.github.io/PROJETO-V5/",
+      "logo": "https://kristianps.github.io/PROJETO-V5/assets/og-image.svg",
+      "featureList": [
+        "Monitor de filas",
+        "Comunicação interna",
+        "Prioridade e urgência",
+        "Relatórios e métricas"
+      ],
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "Profissionais de saúde e equipes de atendimento"
+      }
+    }
+  </script>
 </head>
-<body>
+<body id="top">
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="#"> 
+      <a class="brand" href="#top" aria-label="AssistCam Saúde - início"> 
         <svg class="logo" width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
           <rect x="1" y="1" width="22" height="22" rx="6" fill="var(--green-primary)" />
           <path d="M8 12h8M12 8v8" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
@@ -19,7 +57,7 @@
         <span class="brand-name">AssistCam Saúde</span>
       </a>
 
-      <nav class="nav" id="nav">
+      <nav class="nav" id="nav" aria-label="Navegação principal">
         <a href="#benefits">Benefícios</a>
         <a href="#how">Como funciona</a>
         <a href="#features">Funcionalidades</a>
@@ -40,7 +78,7 @@
             <a href="#contact" class="cta">Agendar demonstração</a>
             <a href="#features" class="btn btn-ghost">Ver funcionalidades</a>
           </div>
-          <ul class="hero-stats">
+          <ul class="hero-stats" aria-label="Principais métricas do produto">
             <li><strong>+50%</strong><span>Redução média de espera</span></li>
             <li><strong>Melhor comunicação</strong><span>Entre equipes</span></li>
           </ul>
@@ -136,7 +174,7 @@
           <p>Agende uma demonstração e conheça como o AssistCam pode ajudar sua unidade.</p>
         </div>
         <div>
-          <a href="#" class="cta large" id="open-demo">Agendar demonstração</a>
+          <a href="mailto:contato@assistcamsaude.com.br" class="cta large" id="open-demo">Agendar demonstração</a>
         </div>
       </div>
     </section>
@@ -145,9 +183,9 @@
   <footer class="site-footer">
     <div class="container footer-inner">
       <div>© AssistCam Saúde — Projeto de demonstração</div>
-      <nav>
-        <a href="#">Política</a>
-        <a href="#">Contato</a>
+      <nav aria-label="Links do rodapé">
+        <a href="mailto:contato@assistcamsaude.com.br">Contato</a>
+        <a href="#top">Voltar ao topo</a>
       </nav>
     </div>
   </footer>

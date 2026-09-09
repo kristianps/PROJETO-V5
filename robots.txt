@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kristianps.github.io/PROJETO-V5/sitemap.xml
