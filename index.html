@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AssistCam Saúde — Landing Page</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#"> 
+        <svg class="logo" width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
+          <rect x="1" y="1" width="22" height="22" rx="6" fill="var(--green-primary)" />
+          <path d="M8 12h8M12 8v8" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span class="brand-name">AssistCam Saúde</span>
+      </a>
+
+      <nav class="nav" id="nav">
+        <a href="#benefits">Benefícios</a>
+        <a href="#how">Como funciona</a>
+        <a href="#features">Funcionalidades</a>
+        <a href="#contact" class="cta cta-small">Agendar demonstração</a>
+      </nav>
+
+      <button id="mobile-toggle" class="mobile-toggle" aria-label="Abrir menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <h1>Organize filas, reduza atrasos e mantenha o atendimento em movimento.</h1>
+          <p class="lead">Mais clareza para quem atende, mais calma para quem precisa de ajuda. Ferramenta pensada para unidades de saúde e equipes de apoio.</p>
+          <div class="hero-actions">
+            <a href="#contact" class="cta">Agendar demonstração</a>
+            <a href="#features" class="btn btn-ghost">Ver funcionalidades</a>
+          </div>
+          <ul class="hero-stats">
+            <li><strong>+50%</strong><span>Redução média de espera</span></li>
+            <li><strong>Melhor comunicação</strong><span>Entre equipes</span></li>
+          </ul>
+        </div>
+
+        <div class="hero-visual" aria-hidden>
+          <div class="mockup">
+            <svg viewBox="0 0 360 220" xmlns="http://www.w3.org/2000/svg">
+              <rect width="360" height="220" rx="18" fill="#fff" stroke="#DFEAE7" />
+              <rect x="18" y="18" width="324" height="36" rx="8" fill="var(--green-light)" />
+              <rect x="18" y="66" width="120" height="24" rx="6" fill="#fff" stroke="#DFEAE7" />
+              <rect x="18" y="100" width="288" height="18" rx="6" fill="#FDF9EF" />
+              <rect x="18" y="130" width="140" height="60" rx="8" fill="#fff" stroke="#DFEAE7" />
+              <circle cx="260" cy="150" r="30" fill="var(--yellow-attention)" />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="benefits" class="section bg-soft">
+      <div class="container">
+        <h2>Benefícios</h2>
+        <p class="muted">Soluções práticas para o fluxo de atendimento e comunicação interna.</p>
+        <div class="grid-3">
+          <article class="card">
+            <h3>Fluxo organizado</h3>
+            <p>Acompanhe senhas e prioridades em tempo real com destaque para urgências.</p>
+          </article>
+          <article class="card">
+            <h3>Comunicação clara</h3>
+            <p>Envie avisos entre setores e reduza erros operacionais.</p>
+          </article>
+          <article class="card">
+            <h3>Decisões rápidas</h3>
+            <p>Indicadores visuais e métricas para tomada de decisão imediata.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="how" class="section">
+      <div class="container">
+        <h2>Como funciona</h2>
+        <div class="how-grid">
+          <div class="how-step">
+            <div class="badge">1</div>
+            <h4>Registro rápido</h4>
+            <p>Equipe registra atendimentos e prioridades com poucos cliques.</p>
+          </div>
+          <div class="how-step">
+            <div class="badge">2</div>
+            <h4>Visão unificada</h4>
+            <p>Painel central exibe filas, status e avisos entre setores.</p>
+          </div>
+          <div class="how-step">
+            <div class="badge">3</div>
+            <h4>Ação imediata</h4>
+            <p>Alertas visuais orientam o time sobre prioridades e mudanças.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="section bg-soft">
+      <div class="container">
+        <h2>Funcionalidades principais</h2>
+        <div class="grid-4">
+          <div class="feature">
+            <strong>Monitor de filas</strong>
+            <p>Visualize e gerencie filas por prioridade.</p>
+          </div>
+          <div class="feature">
+            <strong>Notificações internas</strong>
+            <p>Mensagens rápidas entre recepção e setores.</p>
+          </div>
+          <div class="feature">
+            <strong>Badges de prioridade</strong>
+            <p>Destaque pacientes em atendimento urgente.</p>
+          </div>
+          <div class="feature">
+            <strong>Relatórios simples</strong>
+            <p>Métricas de atendimento para análise rápida.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section callout">
+      <div class="container callout-inner">
+        <div>
+          <h2>Quer ver na prática?</h2>
+          <p>Agende uma demonstração e conheça como o AssistCam pode ajudar sua unidade.</p>
+        </div>
+        <div>
+          <a href="#" class="cta large" id="open-demo">Agendar demonstração</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© AssistCam Saúde — Projeto de demonstração</div>
+      <nav>
+        <a href="#">Política</a>
+        <a href="#">Contato</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
