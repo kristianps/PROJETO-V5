@@ -99,6 +99,46 @@
       </div>
     </section>
 
+    <section class="section workspace">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Painel de atendimento do dia</h2>
+          <p class="muted">A recepcionista acompanha senhas, prioridades e comunicação entre os setores em tempo real.</p>
+        </div>
+
+        <div class="workspace-grid">
+          <div class="queue-panel">
+            <div class="panel-header">
+              <span>Fila de atendimento</span>
+              <span class="queue-pill" id="queue-count">4</span>
+            </div>
+            <ul id="queue-list" class="queue-list" aria-live="polite"></ul>
+          </div>
+
+          <aside class="summary-panel">
+            <div class="mini-stat">
+              <small>Em andamento</small>
+              <strong id="stat-pending">3</strong>
+            </div>
+            <div class="mini-stat accent">
+              <small>Urgência</small>
+              <strong id="stat-urgent">1</strong>
+            </div>
+            <div class="mini-stat">
+              <small>Tempo médio</small>
+              <strong id="stat-time">08 min</strong>
+            </div>
+
+            <div class="quick-actions">
+              <button type="button" class="action-btn" data-action="urgencia">Marcar urgência</button>
+              <button type="button" class="action-btn secondary" data-action="transferir">Transferir setor</button>
+              <button type="button" class="action-btn tertiary" data-action="chamada">Ligar próxima senha</button>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
     <section id="benefits" class="section bg-soft">
       <div class="container">
         <h2>Benefícios</h2>
@@ -174,10 +214,55 @@
           <p>Agende uma demonstração e conheça como o AssistCam pode ajudar sua unidade.</p>
         </div>
         <div>
-          <a href="mailto:contato@assistcamsaude.com.br" class="cta large" id="open-demo">Agendar demonstração</a>
+          <a href="#" class="cta large" id="open-demo">Agendar demonstração</a>
         </div>
       </div>
     </section>
+
+    <div class="demo-modal hidden" id="demo-modal" aria-hidden="true">
+      <div class="demo-modal__content" role="dialog" aria-modal="true" aria-labelledby="demo-title">
+        <button type="button" class="demo-modal__close" id="close-demo" aria-label="Fechar">×</button>
+        <h3 id="demo-title">Agendar demonstração de atendimento</h3>
+        <form id="demo-form">
+          <div class="field-row">
+            <label>
+              Nome da unidade
+              <input type="text" name="unidade" value="Clínica São José" required>
+            </label>
+          </div>
+          <div class="field-row two-cols">
+            <label>
+              Responsável
+              <input type="text" name="responsavel" value="Ana Paula" required>
+            </label>
+            <label>
+              Setor
+              <select name="setor">
+                <option>Recepção</option>
+                <option>Enfermagem</option>
+                <option>Coordenação</option>
+                <option>Suporte operacional</option>
+              </select>
+            </label>
+          </div>
+          <div class="field-row two-cols">
+            <label>
+              Prioridade
+              <select name="prioridade">
+                <option>Alta</option>
+                <option selected>Média</option>
+                <option>Baixa</option>
+              </select>
+            </label>
+            <label>
+              Data
+              <input type="date" name="data" required>
+            </label>
+          </div>
+          <button type="submit" class="cta large full">Salvar agendamento</button>
+        </form>
+      </div>
+    </div>
   </main>
 
   <footer class="site-footer">
